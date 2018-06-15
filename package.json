@@ -12,6 +12,7 @@
   "dependencies": {
     "concurrently": "^3.5.1",
     "express": "^4.16.3",
+    "material-ui-fullscreen-dialog": "^1.0.0",
     "socket.io": "^2.1.0"
   },
   "devDependencies": {

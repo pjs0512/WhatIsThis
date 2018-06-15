@@ -12,9 +12,8 @@ class Navigation extends React.Component{
                 <div class="menuli cl-effect-5">
                     <Link to="/">WhatisThis</Link>
                     <Link to="/"><span data-hover="메인">Main</span></Link>
-                    <Link to="/play"><span data-hover="게임">Play</span></Link>
+                    <Link to="/play"><span data-hover="게임">  GamePlay</span></Link>
                     <Link to="/about"><span data-hover="안내">About</span></Link>
-
                             <div class="dropdowns">
                                 <button class="dropbtns"></button>
                                 <div class="dropdowns-content">

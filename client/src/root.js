@@ -8,4 +8,4 @@ const Root = () => (
     </BrowserRouter>
 )
 
-export default Root
+export default Root;

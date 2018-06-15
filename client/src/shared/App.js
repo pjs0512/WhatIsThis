@@ -1,7 +1,7 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
 import { Main, Play, About } from 'pages';
-import Navigation from 'component/navigation';
+import { Navigation } from 'component'
 
 class App extends React.Component {
     render() {
@@ -10,12 +10,12 @@ class App extends React.Component {
                 <Navigation/>
                 <br/>
                 <br/>
+                <br/>
+                <br/>
                 <Route exact path="/" component={Main}/>
-                <Route path="/play" component={Play}/>
-                <Switch>
-                <Route path="/about/" component={About}/>
-                <Route path="/about/:name" component={About}/>
-                </Switch>
+                <Route exact path="/play" component={Play}/>
+                <Route exact path="/play/:room" component={Play}/>
+                <Route exact path="/about" component={About}/>
             </div>
         );
     }

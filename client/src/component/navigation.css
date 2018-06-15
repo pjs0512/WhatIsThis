@@ -14,14 +14,14 @@
   width :100%;
     display : grid;
     grid-template-columns : 200px 120px 120px 120px 120px 120px auto 150px 150px;
-    grid-template-rows : 80px;
+    grid-template-rows : 60px;
   overflow: hidden;
-  background-color: rgba(60,60,60,0.7);
+  background-color: rgba(60,60,60,0.5);
 font-family: 'Jeju Gothic', serif;
   font-weight : 550;
   font-size :20px;
 
-  line-height: 80px;
+  line-height: 60px;
 }
 
 /* Links inside the navbar */
