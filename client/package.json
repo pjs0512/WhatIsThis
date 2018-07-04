@@ -7,10 +7,12 @@
     "cross-env": "^5.1.4",
     "react": "^16.3.2",
     "react-beforeunload": "^1.0.4",
+    "react-color": "^2.14.1",
     "react-dom": "^16.3.2",
     "react-popup": "^0.9.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.1.4",
+    "react-toastify": "^4.1.0",
     "socket.io-client": "^2.1.0"
   },
   "scripts": {
