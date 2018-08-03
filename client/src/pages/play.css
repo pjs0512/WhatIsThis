@@ -1,65 +1,53 @@
-#canvas{
-    width : 1000px;
-    height : 400px;
+html, body { width: 100%; height: 100%; }
+.imgsize{
+    width : 160px;
+    height : 160px;
     border : 1px solid black;
 }
-.messages {
-    height: 600px;
-    border : 1px solid black;
-    overflow-y: scroll;
-    overflow-y: auto;
+#seikaispan{
+    font-size: 20px;
 }
-.gameGrid{
+.main-layout{
+  width: 100vw;
+  height: 100vh;
+}
+.grid {
+    margin: auto;
+    width: 60%;
     display: grid;
-    grid-template-columns: 1fr 1000px 1fr;
-    grid-auto-rows : minmax(100px, auto);
-    border : 1px;
-}
-.container {
-    border: 2px solid #dedede;
-    background-color: #f1f1f1;
-    border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-/* Darker chat container */
-.darker {
-    border-color: #ccc;
-    background-color: #ddd;
-}
-
-/* Clear floats */
-.container::after {
-    content: "";
-    clear: both;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+    transition: 2s;
+  }
+  .room{
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  .room:hover{
+    opacity: 0.5;
+    filter: blur(3px);
+  }
+.seikaicontainer {
+    width: 70%;
+    height: 70%;
+    margin: 40px auto;
+  }
+.outer {
     display: table;
-}
-
-/* Style images */
-.container img {
-    float: left;
-    max-width: 60px;
     width: 100%;
-    margin-right: 20px;
-    border-radius: 50%;
-}
-
-/* Style the right image */
-.container span.right {
-    float: right;
-    margin-left: 20px;
-    margin-right:10px;
-}
-
-/* Style time text */
-.time-right {
-    float: right;
-    color: #aaa;
-}
-
-/* Style time text */
-.time-left {
-    float: left;
-    color: #999;
-}
+    height: 100%;
+  }
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+  }
+.centered {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    padding: 1em;
+    font-size : 60px;
+    color : black;
+  }

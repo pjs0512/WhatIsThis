@@ -4,6 +4,9 @@ import { Main, Play, About } from 'pages';
 import { Navigation } from 'component'
 
 class App extends React.Component {
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
             <div>
